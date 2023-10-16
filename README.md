@@ -63,14 +63,20 @@
 
 ## ActiveRecord
 
-    O que é: O Active Record é a camada de interação com o banco de dados em aplicativos Ruby on Rails. É uma implementação do padrão de projeto Active Record do padrão MVC.
+    O Active Record é a camada de interação com o banco de dados em aplicativos Ruby on Rails. É uma implementação do padrão de projeto Active Record do padrão MVC.
+    
     ORM (Mapeamento Objeto-Relacional): O Active Record mapeia tabelas do banco de dados para classes Ruby e linhas de tabela para instâncias de objetos.
+    
     Modelos: Modelos são classes Ruby que herdam de ActiveRecord::Base e representam tabelas no banco de dados. 
-    Convenções sobre Configuração: O Active Record segue convenções de nomenclatura para tabelas e colunas, simplificando o desenvolvimento. 
+    
     Relacionamentos: Facilita a definição de relacionamentos entre modelos, como associações um-para-muitos e muitos-para-muitos.    
-    Migrações: O sistema de migrações permite versionar o esquema do banco de dados de forma controlada    
-    Validações: Fornece um mecanismo para definir validações nos modelos, garantindo que os dados atendam a critérios específicos.   
+    
+    Migrações: O sistema de migrações permite versionar o esquema do banco de dados de forma controlada.
+    
+    Validações: Fornece um mecanismo para definir validações nos modelos, garantindo que os dados atendam a critérios específicos. 
+    
     Callbacks: Callbacks permitem adicionar lógica personalizada antes ou depois de ações nos modelos.
+    
     Query Interface: Oferece métodos para criar consultas SQL programaticamente, simplificando a busca de dados no banco de dados.
 
 ## collect e pluck
@@ -80,7 +86,7 @@
     Collect: Traz os dados, permitindo manipula-los e formar um nova array com os dados manipulados.
     Pluck: Traz somente a informação pura, são ser manipulanda, normalmente traz somente da coluna especificada. 
 
-##Help
+## Help
     
     Métodos prontos que podem ser utilizadas para auxiliar na view.
     Ajuda a manter o DRY (Don’t Repea Yourself) 
@@ -117,7 +123,7 @@ pry --> ativa o bash
 
 exit --> sai do bash
 
-#PROCESSO
+# PROCESSO
     Vragran Up
     Vagrant ssh
     entrar na pasta vagrant (cd.. para voltar e cd 'diretorio' para entrar) (ls para listar)
