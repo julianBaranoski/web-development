@@ -7,6 +7,8 @@
     vagrant suspend: Pausa a máquina vitural
     vagrant halt: para a máquina virtual
     vagrant status: informa o status atual da máquina. 
+    entrar na pasta vagrant (cd.. para voltar e cd 'diretorio' para entrar) (ls para listar)
+    vagrant plugin install vagrant-vbguest: instala o plugin vbguest: esse plugin é uma extensão do Vagrant que facilita a instalação e a atualização das Guest Additions no VirtualBox quando você está gerenciando máquinas virtuais (VMs) VirtualBox com o Vagrant. (caso     dê problema na pasta vagrant, reinstalar o plugin (vbguest)).
 
 ## Rails
     rails: comando que indica para o cmd que você quer usar as funções do framework rails
@@ -57,10 +59,77 @@
         rails generate controller welcome index: Este comando gera um controlador chamado "Welcome" com uma ação chamada            "index". Ele também cria a estrutura básica de arquivos para essa ação.
         
 
+##ActiveRecord
+
+    O que é: O Active Record é a camada de interação com o banco de dados em aplicativos Ruby on Rails. É uma implementação do padrão de projeto Active Record do padrão MVC.
+
+    ORM (Mapeamento Objeto-Relacional): O Active Record mapeia tabelas do banco de dados para classes Ruby e linhas de tabela para instâncias de objetos.
+    
+    Modelos: Modelos são classes Ruby que herdam de ActiveRecord::Base e representam tabelas no banco de dados.
+    
+    Convenções sobre Configuração: O Active Record segue convenções de nomenclatura para tabelas e colunas, simplificando o desenvolvimento.
+    
+    Relacionamentos: Facilita a definição de relacionamentos entre modelos, como associações um-para-muitos e muitos-para-muitos.
+    
+    Migrações: O sistema de migrações permite versionar o esquema do banco de dados de forma controlada.
+    
+    Validações: Fornece um mecanismo para definir validações nos modelos, garantindo que os dados atendam a critérios específicos.
+    
+    Callbacks: Callbacks permitem adicionar lógica personalizada antes ou depois de ações nos modelos.
+    
+    Query Interface: Oferece métodos para criar consultas SQL programaticamente, simplificando a busca de dados no banco de dados.
+
+##collect e pluck
+
+    são dois métodos que podem ser usados para extrair informações específicas de uma coleção de registros do banco de dados.
+
+    Collect: Traz os dados, permitindo manipula-los e formar um nova array com os dados manipulados.
+    Pluck: Traz somente a informação pura, são ser manipulanda, normalmente traz somente da coluna especificada. 
+
+##Help
+    
+    Métodos prontos que podem ser utilizadas para auxiliar na view.
+    Ajuda a manter o DRY (Don’t Repea Yourself) 
+    cities_helper.rb
+
+    Helper link_to
+
+        <%= link_to 'Exibir', '/cities'%>
+        <%= link_to 'Exibir', city %>
+    
+        Um método pronto para facilitar a escrita de links usando código rails
+
+    Helper imagem
+        <td><img src=”<%= city.image %>” width=”25px”
+        height=”25px”></ td>
+        <td><%= image_tag city.image , width: 25, height: 25
+        %></td>
+        <td><%= image_tag city.image , size: “25x25” %></td>
+
+    Helper data
+        <%= Date.today %>
+        <%= Date.today.strftime("%d/%m/%Y") %>
+        <%= br_date(Date.today) %>
+        —------------- helper
+        module ApplicationHelper
+         def br_date(us_date)
+         us_data.strftime("%d;%m;%Y")
+         end
+        end
         
 
-        
-# rails -T OU rake --tasks: lista todas as tarefas disponíveis.
+
+pry --> ativa o bash
+exit --> sai do bash
+
+#PROCESSO
+    Vragran Up
+    Vagrant ssh
+    entrar na pasta vagrant (cd.. para voltar e cd 'diretorio' para entrar) (ls para listar)
+    rails s -b 0.0.0.0 --> sobe um servidor rails
+
+
+rails -T OU rake --tasks: lista todas as tarefas disponíveis.
     
 
 
