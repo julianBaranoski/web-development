@@ -1,12 +1,12 @@
 # Rails Cheat Sheet!
 
 ## Vagrant
-    **vagrant Init:**  Inicializa um novo arquivo (vagrantfile) com configurações pré definidas.
-    **vagrant up :** Cria e inicia uma máquina virtual 
-    **vragrant ssh:** conecta na máquina virtual pelo bash
-    **vagrant suspend:** Pausa a máquina vitural
-    **vagrant halt:** para a máquina virtual
-    **vagrant status:** informa o status atual da máquina. 
+    vagrant Init: Inicializa um novo arquivo (vagrantfile) com configurações pré definidas.
+    vagrant up: Cria e inicia uma máquina virtual 
+    vragrant ssh: conecta na máquina virtual pelo bash
+    vagrant suspend: Pausa a máquina vitural
+    vagrant halt: para a máquina virtual
+    vagrant status: informa o status atual da máquina. 
 
 ## Rails
     **rails**: comando que indica para o cmd que você quer usar as funções do framework rails
