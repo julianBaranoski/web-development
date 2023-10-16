@@ -123,7 +123,7 @@ pry --> ativa o bash
 
 exit --> sai do bash
 
-# PROCESSO
+## PROCESSO
     Vragran Up
     Vagrant ssh
     entrar na pasta vagrant (cd.. para voltar e cd 'diretorio' para entrar) (ls para listar)
