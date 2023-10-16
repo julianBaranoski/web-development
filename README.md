@@ -37,6 +37,8 @@
     Configuração do banco -> config/database.yml 
     db/seeds.rb -> Arquivo utilizado para popular o banco de dados.
 
+    rails -T OU rake --tasks: lista todas as tarefas disponíveis.
+
 ## Rails generate
 
     O que são geradores? 
@@ -59,27 +61,19 @@
         rails generate controller welcome index: Este comando gera um controlador chamado "Welcome" com uma ação chamada            "index". Ele também cria a estrutura básica de arquivos para essa ação.
         
 
-##ActiveRecord
+## ActiveRecord
 
     O que é: O Active Record é a camada de interação com o banco de dados em aplicativos Ruby on Rails. É uma implementação do padrão de projeto Active Record do padrão MVC.
-
     ORM (Mapeamento Objeto-Relacional): O Active Record mapeia tabelas do banco de dados para classes Ruby e linhas de tabela para instâncias de objetos.
-    
-    Modelos: Modelos são classes Ruby que herdam de ActiveRecord::Base e representam tabelas no banco de dados.
-    
-    Convenções sobre Configuração: O Active Record segue convenções de nomenclatura para tabelas e colunas, simplificando o desenvolvimento.
-    
-    Relacionamentos: Facilita a definição de relacionamentos entre modelos, como associações um-para-muitos e muitos-para-muitos.
-    
-    Migrações: O sistema de migrações permite versionar o esquema do banco de dados de forma controlada.
-    
-    Validações: Fornece um mecanismo para definir validações nos modelos, garantindo que os dados atendam a critérios específicos.
-    
+    Modelos: Modelos são classes Ruby que herdam de ActiveRecord::Base e representam tabelas no banco de dados. 
+    Convenções sobre Configuração: O Active Record segue convenções de nomenclatura para tabelas e colunas, simplificando o desenvolvimento. 
+    Relacionamentos: Facilita a definição de relacionamentos entre modelos, como associações um-para-muitos e muitos-para-muitos.    
+    Migrações: O sistema de migrações permite versionar o esquema do banco de dados de forma controlada    
+    Validações: Fornece um mecanismo para definir validações nos modelos, garantindo que os dados atendam a critérios específicos.   
     Callbacks: Callbacks permitem adicionar lógica personalizada antes ou depois de ações nos modelos.
-    
     Query Interface: Oferece métodos para criar consultas SQL programaticamente, simplificando a busca de dados no banco de dados.
 
-##collect e pluck
+## collect e pluck
 
     são dois métodos que podem ser usados para extrair informações específicas de uma coleção de registros do banco de dados.
 
@@ -120,6 +114,7 @@
 
 
 pry --> ativa o bash
+
 exit --> sai do bash
 
 #PROCESSO
@@ -129,7 +124,7 @@ exit --> sai do bash
     rails s -b 0.0.0.0 --> sobe um servidor rails
 
 
-rails -T OU rake --tasks: lista todas as tarefas disponíveis.
+
     
 
 
